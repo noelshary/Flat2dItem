@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.neoloni.flat2d.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BakedQuadAccessor",
+    "BasicItemModelMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
