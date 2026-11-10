@@ -3,23 +3,20 @@
   "id": "flat2d",
   "version": "${version}",
   "name": "2D Items",
-  "description": "Zeigt Items flach (2D) wie in aelteren Minecraft-Versionen. Einstellungen ueber das ModMenu.",
-  "authors": ["Neoloni"],
+  "description": "Zeigt Items auf dem Boden flach in 2D. Einstellungen ueber Mod Menu.",
   "license": "MIT",
-  "icon": "assets/flat2d/icon.png",
   "environment": "client",
   "entrypoints": {
-    "client": ["io.neoloni.flat2d.Flat2DMod"],
-    "modmenu": ["io.neoloni.flat2d.ModMenuIntegration"]
+    "client": ["io.flat2d.Flat2dClient"],
+    "modmenu": ["io.flat2d.ModMenuIntegration"]
   },
   "mixins": ["flat2d.mixins.json"],
   "depends": {
-    "fabricloader": ">=0.16.0",
+    "fabricloader": ">=0.18.1",
     "minecraft": "~1.21.11",
-    "java": ">=21",
-    "fabric-api": "*"
+    "java": ">=21"
   },
-  "recommends": {
+  "suggests": {
     "modmenu": "*"
   }
 }
